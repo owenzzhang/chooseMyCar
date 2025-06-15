@@ -218,10 +218,9 @@ function ProductDetails() {
 
             <div className="flex flex-col p-4 bg-blue-50 rounded-md">
               <span className="mt-1 font-semibold">Can We Help?</span>
-              <input
-                type="text"
+              <textarea
                 placeholder="Hi, I'm interested in this Honda Civic. Is it still available?"
-                className="border border-gray-700 rounded px-3 py-4 my-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-700 rounded px-3 py-2 h-20 my-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button className="bg-green-400 px-4 py-2 font-semibold rounded-sm hover:bg-green-300">
                 Send Message
@@ -290,7 +289,7 @@ function ProductDetails() {
             <div className="flex flex-col sm:flex-row gap-2 my-2">
               <input
                 type="number"
-                className="border border-gray-900 rounded-md px-2 py-2 flex-grow"
+                className="border border-gray-900 rounded-md px-2 py-2 flex-grow text-center"
                 placeholder="£250"
               />
               <button className="bg-amber-300 border border-black rounded-md font-semibold py-2 px-4 whitespace-nowrap">
@@ -355,10 +354,9 @@ function ProductDetails() {
 
           <div className="flex flex-col p-4 bg-blue-50 rounded-md">
             <span className="mt-1 font-semibold">Can We Help?</span>
-            <input
-              type="text"
+            <textarea
               placeholder="Hi, I'm interested in this Honda Civic. Is it still available?"
-              className="border border-gray-700 rounded px-3 py-4 my-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-700 rounded px-3 py-2 h-20 my-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button className="bg-green-400 px-4 py-2 font-semibold rounded-sm hover:bg-green-300">
               Send Message
