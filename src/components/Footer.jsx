@@ -228,9 +228,15 @@ function Footer() {
         </div>
 
         <div className="flex items-center lg:justify-end md:justify-end justify-center gap-3 lg:border-t lg:border-b border-gray-100 py-2">
-          <img src={twitterFill} alt="Twitter" />
-          <img src={facebook} alt="Facebook" />
-          <img src={Instagram} alt="Instagram" />
+          <a href="https://www.facebook.com/ChooseMyCarUK" target="blank">
+            <img src={twitterFill} alt="Twitter" />
+          </a>
+          <a href="https://x.com/choosemycaruk" target="blank">
+            <img src={facebook} alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/choosemycaruk/#" target="blank">
+            <img src={Instagram} alt="Instagram" />
+          </a>
         </div>
 
         <div className="w-full text-center space-y-4 text-sm py-4">
