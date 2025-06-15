@@ -19,6 +19,7 @@ import mainCar from "../assets/mainCar.png";
 import section from "../assets/section.png";
 import mobileBG1 from "../assets/mobileBG1.png";
 import mobileBG2 from "../assets/mobileBG2.png";
+import { HiOutlineShare } from "react-icons/hi";
 
 function ProductDetails() {
   const [selectedImage, setSelectedImage] = useState(images[0]);
@@ -59,11 +60,18 @@ function ProductDetails() {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-4 max-w-screen-xl mx-auto px-4">
         <div className="md:col-span-3">
           <div className="mb-4 relative">
-            <img
-              src={images[selectedIndex] || honda6}
-              alt="Selected"
-              className="w-full h-[260px] md:h-[440px] object-cover rounded-md"
-            />
+            <div className="relative">
+              <img
+                src={images[selectedIndex] || honda6}
+                alt="Selected"
+                className="w-full h-[260px] md:h-[440px] object-cover rounded-md"
+              />
+
+              <button className="absolute bottom-2 right-2 bg-white bg-opacity-80 p-2 rounded-md cursor-pointer flex items-center gap-1">
+                <HiOutlineShare className="w-5 h-5 text-gray-800" />
+                <span className="text-sm text-gray-800">Share</span>
+              </button>
+            </div>
 
             <button
               onClick={handleMobilePrev}
